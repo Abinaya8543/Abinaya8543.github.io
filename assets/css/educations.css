@@ -1,0 +1,72 @@
+body {
+    font-family: 'Magnolia Script', cursive;
+    background: linear-gradient(to right, #fce1bc, #fcb69f, #fdb2d7, #ffcef3);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 20px;
+    overflow: hidden;
+    text-align: right;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.9em;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .education-details {
+    width: 35%;
+    font-size: 24px;
+    color: #000;
+    line-height: 1.5;
+    padding-left:15%;
+    padding-top: 3%;
+    font-weight: bold;
+    font-size: 1.9em;
+  }
+  
+  .images {
+    width: 35%;
+    margin-right: 10%;
+  }
+  
+  .images img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 70px;
+    padding-top: 5%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
