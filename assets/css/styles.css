@@ -6,11 +6,22 @@ body {
   color: #333;
 }
 
+nav{
+  background-color:gainsboro;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+}
+
 nav ul {
   list-style-type: none;
   margin: 20px;
   overflow: hidden;
-  text-align: right;
+  /* text-align: right; */
+  /* position: fixed; */
+  top: 0%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav ul li {
@@ -25,9 +36,10 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav li a:hover,
+nav li  a.active {
   text-decoration: underline;
+  color: #fcb69f;
 }
 
 #home {
@@ -127,25 +139,26 @@ nav ul li a.active {
   color: #000;
   line-height: 1.5;
   padding-left: 15%;
-  padding-top: 3%;
+  padding-top: 6%;
   font-weight: bold;
   font-size: 1.9em;
 }
 
 .images {
   width: 35%;
+  margin-top: 5%;
   margin-right: 10%;
 }
 
 .images img {
-  width: 100%;
+  width: 110%;
   border-radius: 15px;
-  margin-bottom: 70px;
-  padding-top: 5%;
+  margin-bottom: 50px;
+  padding-top: 3%;
 }
 
 .contact-section {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
