@@ -145,12 +145,13 @@ nav ul li a.active {
 }
 
 .contact-section {
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   padding-top: 10%;
-  margin-top: 400px;
+  /* margin-top: 400px; */
   
 }
 
