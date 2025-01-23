@@ -1,0 +1,417 @@
+body {
+  font-family: 'Zen Dots', cursive;
+  margin: 0;
+  padding: 0;
+  background-color:darkseagreen;
+  color: #333;
+  overflow-x: hidden;
+}
+
+nav{
+  background-color: #333 ;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  z-index: 2;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 20px;
+  overflow: hidden;
+  top: 0%;
+  display: flex;
+  justify-content:flex-end;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:aliceblue;
+  font-size: 1.9em;
+  font-weight: bold;
+}
+
+nav li a:hover,
+nav li  a.active {
+  text-decoration:underline;
+}
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+.button{
+  transition: 3s;
+  box-shadow: 0px 3px 3px black;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  font-family: 'Magnolia Script', cursive;
+  
+}
+.button a{
+   text-decoration: none;
+   color: #000;
+   font-weight: 900;
+  color:darkblue;
+
+}
+.button:hover{
+  scale:1.2;
+  font-size: 15px;
+}
+.intro {
+  flex: 1;
+  margin-left: 200px;
+}
+
+.intro h1 {
+  font-size: 68px;
+  font-weight:lighter;
+  margin: 0;
+  line-height: 1.2;
+  color: #333;
+}
+
+.profile-pic {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+  box-shadow: 2px;
+  color:aliceblue;
+}
+
+.profile-pic img {
+  width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(255, 0, 230, 0.6);
+}
+.img:hover{
+
+    
+    transform: scale(1.05); 
+    transition: 0.3s ease-in-out; 
+
+}
+
+#about{
+  padding-top: 90px;
+}
+
+#about h1{
+  text-align: center;
+  /* font-family: "Zen Dots", serif; */
+  font-size: xx-large;
+}
+
+.about-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  overflow: hidden;
+  margin-top: 0px;
+  padding-top: 50px;
+}
+
+
+.about-section p {
+  font-weight: bold;
+  font-size: 1.9em;
+  height: 500px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 400px;
+  overflow: hidden;
+}
+
+
+#skills{
+  height: 200;
+}
+
+
+#contact{
+  height: 700px;
+}
+.contact-section {
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact-item {
+  width: 30%;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-item img {
+  height: 120px;
+  display: block;
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+.contact-item p {
+  margin: 30px 40px 70px 50px;
+}
+.fle{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 140px;
+}
+.star-rating {
+  display: flex;
+  font-size: 2em;
+  color: gold; /* Star color */
+}
+
+ .skills {
+  margin: auto;
+}
+#skills {
+  padding: 100px;
+  text-align: center;
+}
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 400px;
+}
+.skill-container {
+  width: 300px;
+  margin: 20px;
+}
+.skill {
+  margin: 60px 0;
+}
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight:100;
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 30px;
+  position: relative;
+}
+
+.skill-level {
+  height: 100%;
+  background-color:deeppink;
+  transition: width 0.5s ease;
+}
+
+/* Individual skill levels */
+.html { width: 65%; }
+.css { width: 55%; }
+.js { width: 55%; }
+.python { width: 30%; }
+.problem-solving { width: 45%; }
+.mysql { width: 55%; }
+
+.skill-level::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  width: 200%;
+}
+
+
+/* .skill-container-1 {
+  width: 70%;
+  max-width: 400px;
+  margin: 20px auto;
+  margin-top: 100px;
+  margin-left: 200px;
+  font-size: xx-large;
+  padding-top: 200px;
+  position: relative;
+  height: 200px;
+}
+
+.skill-container-2{
+  width: 70%;
+  max-width: 400px;
+  margin: 20px auto;
+  position: relative;
+  bottom: 400px;
+  padding-top: 180px;
+  left: 300px;
+  font-size: xx-large;
+  height: 200px;
+}
+
+.skill {
+  margin: 20px 0;
+  padding-bottom: 50px;
+}
+
+.skill-title {
+  display: flex;
+  font-family:Georgia, 'Times New Roman', Times, serif;      
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color:#333;
+.
+ {
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+ 
+}
+
+.skill-level {
+  height: 25px;
+  transition: width 1s ease;
+  background-color: rgb(56, 36, 31)x;
+}
+*/
+/* .sl{
+  padding-top: 10px;
+}
+
+.wr{
+  margin-top: 20px;
+} */
+
+.engskill{
+  padding-top: 400px; 
+}
+
+
+.tech{
+  height: 30px;
+}
+
+
+.eng{
+  padding-top: 150px;
+  font-size: x-large;
+  text-align: center;
+}
+.change{
+  margin-top: 40px;
+}
+
+#lifeskills{
+  padding-top: 10pc;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size:xx-large;
+}
+
+#star1{
+  margin-left: 200px;
+}
+
+#star2{
+  margin-left: 220px;
+}
+
+#star3{
+  margin-left: 38pc;
+}
+
+.abapt{
+  display: flex;
+  justify-content:space-around;
+  text-align: center;
+}
+
+
+.social_skill{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.abl{
+  font-size: xx-large;
+}
+
+.smsa{
+  font-size: xx-large;
+}
+
+.ss{
+  font-size: xx-large;
+}
+
+.star-rating1{
+  display: flex;
+  font-size: 4em;
+  color: gold; /* Star color */
+  
+}
+
+
+.star-rating2{
+  display: flex;
+  font-size: 4em;
+  color: gold; /* Star color */
+  margin-right: 100px;
+}
+
+
+.star-rating3{
+  display: flex;
+  font-size: 4em;
+  color: gold; /* Star color */
+}
+
+.english{
+  text-align: center;
+  left: 550px;
+  position: absolute;
+  top: 2500px;
+  padding-top: 160px;
+}
+
+#contact h1{
+text-align: center;
+font-size: xx-large;
+}
